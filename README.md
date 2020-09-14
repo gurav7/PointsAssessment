@@ -4,4 +4,7 @@
     
     pip3 install pandas
     
-2) Execute python3 TestApp.py
+2) Execute 
+
+    python3 TestApp.py
+
