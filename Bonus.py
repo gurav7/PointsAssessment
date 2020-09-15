@@ -1,5 +1,6 @@
 import pandas as pd
 
+# Setting to display dataframe in readable format
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
@@ -14,4 +15,3 @@ def bonus_calculation(order):
     j = df.groupby(['offerName', 'status'])['memberId'].nunique().to_frame('Unique members')
 
     return pd.merge(g, j, left_index=True, right_index=True).reset_index()
-
